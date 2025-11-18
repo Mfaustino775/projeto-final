@@ -20,12 +20,7 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background: var(--verde);
-    color: var(--bege);
-    padding: 2rem 1rem;
-    text-align: center;
-}
+
 
 .logo {
     font-family: 'Space Grotesk', sans-serif;
@@ -85,7 +80,6 @@ section {
     margin-bottom: 2rem;
     padding: 1.5rem;
     background: rgba(0, 0, 0, .5);
-    border: 1px solid var(--cinza);
     border-radius: 8px;
     transition: all 0.3s ease;
 }
@@ -144,10 +138,6 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.card-integrante:hover .foto-integrante {
-    transform: scale(1.08);
-    border-color: var(--vermelho);
-}
 
 .nome-integrante {
     font-weight: 600;
@@ -488,22 +478,74 @@ h3 {
 }
 
 /* Footer */
-footer {
-    background: var(--preto);
-    padding: 3rem 1rem;
-    text-align: center;
+/* Footer */
+.rodape {
+    background: rgba(0, 0, 0, 0.8);
     border-top: 1px solid var(--cinza);
-    margin-top: 3rem;
+    padding: 3rem 1rem 1rem;
+    margin-top: 2rem;
 }
 
-.agradecimentos h2 {
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.rodape-coluna h3 {
     color: var(--laranja);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
 }
 
-.agradecimentos p {
-    margin-bottom: 1rem;
+.rodape-coluna p {
     line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.rodape-coluna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rodape-coluna li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(106, 137, 167, 0.2);
+}
+
+.rodape-coluna a {
+    color: var(--bege);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape-coluna a:hover {
+    color: var(--laranja);
+}
+
+.rodape-copyright {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--cinza);
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 768px) {
+    .rodape-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .rodape-coluna {
+        text-align: center;
+    }
 }
 
 /* Responsividade */
@@ -607,3 +649,4 @@ footer {
         height: 120px;
     }
 }
+
