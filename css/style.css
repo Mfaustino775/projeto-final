@@ -174,7 +174,7 @@ section {
 }
 
 .section-bg {
-    background-color: #f0f0f0; /* Mantido para contraste com o fundo bege */
+    background-color: #f0f0f0;
 }
 
 .section-header {
@@ -196,7 +196,7 @@ section {
     margin: 0 auto;
 }
 
-/* Integrantes - CORRIGIDO */
+/* Integrantes */
 .integrantes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -498,6 +498,7 @@ section {
     margin-bottom: 15px;
     background-color: var(--secondary);
     padding: 10px;
+
 }
 
 /* Vídeo */
