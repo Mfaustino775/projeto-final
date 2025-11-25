@@ -109,12 +109,12 @@ header {
 }
 
 /* Hero Section */
-/* Hero Section */
+
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%), url('../img/banner.png') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%), url('../img/bannersite.jpeg') no-repeat center center/cover;
     color: var(--secondary);
     text-align: center;
     padding: 0 20px;
